@@ -277,10 +277,10 @@ input::placeholder {
 input[type="checkbox"]:checked + span::after,
 input[type="checkbox"]:active + span::after {
   content: "";
+  display: block;
   width: 15px;
   height: 15px;
   background: #fff;
-  position: absolute;
   margin: 1px;
 }
 
