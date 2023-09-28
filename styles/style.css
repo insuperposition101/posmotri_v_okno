@@ -176,8 +176,14 @@ ol {
   outline: none;
 }
 
+/* Ок, убираю transparent, в таком случае обводка будет двойной.
+Ранее одинарная обводка для textfield при :active достигалась так:
+.search-form__label:has(.search-form__textfield):active {
+  border: 1px solid #fff;
+  outline: none;
+} */
 .search-form__textfield:active {
-  border: 1px solid transparent;
+  border: 1px solid #fff;
 }
 
 input::placeholder {
@@ -215,6 +221,7 @@ input::placeholder {
   font-weight: 700;
   border: 1px solid #fff;
   height: 34px;
+  width: 100%;
 }
 
 .button:hover {
@@ -238,12 +245,7 @@ input::placeholder {
 
 .search-form__submit-button {
   max-width: 194px;
-  width: 100%;
   align-self: end;
-}
-
-.more-button {
-  width: 100%;
 }
 
 .search-form__fieldset {
