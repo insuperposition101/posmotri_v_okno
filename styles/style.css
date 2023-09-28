@@ -177,7 +177,7 @@ ol {
 }
 
 .search-form__textfield:active {
-  border: 1px solid #fff;
+  border: 1px solid transparent;
 }
 
 input::placeholder {
